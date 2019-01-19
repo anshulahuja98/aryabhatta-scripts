@@ -32,7 +32,7 @@ for attendance_link in attendance_links:
 	columns = attendance_rows[0]
 	personal_row = None
 	for attendance_row in attendance_rows :
-		if attendance_row.find(text='B17CS006'):
+		if attendance_row.find(text=roll_number):
 			personal_row = attendance_row
 
 	if personal_row is not None:
